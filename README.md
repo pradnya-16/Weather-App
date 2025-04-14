@@ -1,1 +1,92 @@
- # 🌦️ Weather App – Visual Crossing Android Client  This is a full-featured Android weather application built in Java using Android Studio. It uses the [Visual Crossing Weather API](https://www.visualcrossing.com/) to fetch and display current, hourly, and 15-day weather forecasts. The app supports real-time geolocation, unit toggling (F/C), map integration, and beautiful gradient visuals that reflect temperature conditions.  ## 📱 Features  ### 📍 MainActivity - 🔄 Automatically fetches the user’s current location (via FusedLocationProvider). - 🌡 Displays current temperature, “feels like” temp, humidity, UV index, sunrise, and sunset. - 🧭 Wind direction and speed, calculated from degrees to compass format. - 🌥 Dynamic background gradients based on temperature values. - 🕒 Horizontal `RecyclerView` for hourly forecasts. - 📊 Temperature line chart throughout the day. - 📌 Custom icon bar with:   - 📍 Location Picker   - 📊 15-Day Forecast Toggle   - 🌐 Map integration (view location)   - 📤 Share current weather   - 🔁 Reset to current location   - 🌡 Fahrenheit/Celsius switch  ### 📅 DailyForecastActivity - 🔍 Scrollable list of 15-day weather forecasts. - ☀️ Displays icons, temps (morning, afternoon, evening, night), UV index, and weather descriptions. - 💡 Responsive layout that adapts for portrait and landscape.  ## 🔗 API Used  - **Visual Crossing Weather API**   - Used to retrieve:     - Current conditions     - Hourly forecast (24 hours)     - 15-day forecast   - [Sign up for an API key here](https://www.visualcrossing.com/)  ## 🧰 Tech Stack  - Java (Android SDK) - Android Studio - RecyclerView - Volley (for HTTP requests) - Picasso / Glide (for image loading) - View Binding - Graphing library (for hourly temperature chart) - AlertDialogs - Custom Drawables - GeoCoding + Google Maps Intent  ## 📦 App Structure  WeatherApp/ ├── activities/ │   ├── MainActivity.java │   └── DailyForecastActivity.java ├── utils/ │   └── ColorMaker.java ├── adapters/ │   └── HourlyAdapter.java ├── model/ │   └── WeatherData.java ├── res/ │   ├── layout/ │   ├── drawable/ │   ├── mipmap/ ├── AndroidManifest.xml └── build.gradle  ## 🚀 How to Run  1. Clone the repo:    git clone https://github.com/pradnya-16/Weather-App.git  2. Open in Android Studio.  3. Set your API Key in the Constants.java or wherever it's referenced:    String API_KEY = "YOUR_API_KEY";  4. Run the app on an emulator or connected device.  ## 🏅 Extra Credit Features (if implemented)  - ✅ Share Weather Feature - ✅ Map integration for location viewing - ✅ Reset to actual location with one tap  ## 📃 License  This project is developed as part of the CSC 372/472 Mobile Application Development course at DePaul University. For educational purposes only.  > Built with ☁️ and ☕ by Pradnya Kadam 
+ 
+# 🌦️ Weather App – Visual Crossing Android Client 
+ 
+This is a full-featured Android weather application built in Java using Android Studio. It uses the [Visual Crossing Weather API](https://www.visualcrossing.com/) to fetch and display current, hourly, and 15-day weather forecasts. The app supports real-time geolocation, unit toggling (F/C), map integration, and beautiful gradient visuals that reflect temperature conditions. 
+ 
+## 📱 Features 
+ 
+### 📍 MainActivity 
+- 🔄 Automatically fetches the user’s current location (via FusedLocationProvider). 
+- 🌡 Displays current temperature, “feels like” temp, humidity, UV index, sunrise, and sunset. 
+- 🧭 Wind direction and speed, calculated from degrees to compass format. 
+- 🌥 Dynamic background gradients based on temperature values. 
+- 🕒 Horizontal `RecyclerView` for hourly forecasts. 
+- 📊 Temperature line chart throughout the day. 
+- 📌 Custom icon bar with: 
+  - 📍 Location Picker 
+  - 📊 15-Day Forecast Toggle 
+  - 🌐 Map integration (view location) 
+  - 📤 Share current weather 
+  - 🔁 Reset to current location 
+  - 🌡 Fahrenheit/Celsius switch 
+ 
+### 📅 DailyForecastActivity 
+- 🔍 Scrollable list of 15-day weather forecasts. 
+- ☀️ Displays icons, temps (morning, afternoon, evening, night), UV index, and weather descriptions. 
+- 💡 Responsive layout that adapts for portrait and landscape. 
+ 
+## 🔗 API Used 
+ 
+- **Visual Crossing Weather API** 
+  - Used to retrieve: 
+    - Current conditions 
+    - Hourly forecast (24 hours) 
+    - 15-day forecast 
+  - [Sign up for an API key here](https://www.visualcrossing.com/) 
+ 
+## 🧰 Tech Stack 
+ 
+- Java (Android SDK) 
+- Android Studio 
+- RecyclerView 
+- Volley (for HTTP requests) 
+- Picasso / Glide (for image loading) 
+- View Binding 
+- Graphing library (for hourly temperature chart) 
+- AlertDialogs 
+- Custom Drawables 
+- GeoCoding + Google Maps Intent 
+ 
+## 📦 App Structure 
+ 
+WeatherApp/ 
+├── activities/ 
+│   ├── MainActivity.java 
+│   └── DailyForecastActivity.java 
+├── utils/ 
+│   └── ColorMaker.java 
+├── adapters/ 
+│   └── HourlyAdapter.java 
+├── model/ 
+│   └── WeatherData.java 
+├── res/ 
+│   ├── layout/ 
+│   ├── drawable/ 
+│   ├── mipmap/ 
+├── AndroidManifest.xml 
+└── build.gradle 
+ 
+## 🚀 How to Run 
+ 
+1. Clone the repo: 
+   git clone https://github.com/pradnya-16/Weather-App.git 
+ 
+2. Open in Android Studio. 
+ 
+3. Set your API Key in the Constants.java or wherever it's referenced: 
+   String API_KEY = "YOUR_API_KEY"; 
+ 
+4. Run the app on an emulator or connected device. 
+ 
+## 🏅 Extra Credit Features (if implemented) 
+ 
+- ✅ Share Weather Feature 
+- ✅ Map integration for location viewing 
+- ✅ Reset to actual location with one tap 
+ 
+## 📃 License 
+ 
+This project is developed as part of the CSC 372/472 Mobile Application Development course at DePaul University. For educational purposes only. 
+ 
+> Built with ☁️ and ☕ by Pradnya Kadam 
+ 
